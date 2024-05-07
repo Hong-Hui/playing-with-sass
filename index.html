@@ -2,23 +2,95 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
 		<link
 			rel="icon"
 			type="image/svg+xml"
 			href="/vite.svg" />
 		<link
 			rel="stylesheet"
-			href="style.css" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<title>CAMP</title>
+			href="style.sass" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+			rel="stylesheet" />
+		<title>SurfLife</title>
 	</head>
 
 	<body>
-		<div id="app">test</div>
-		<script
-			type="module"
-			src="/main.js"></script>
+		<nav>
+			<div class="nav__header">
+				<div class="nav__logo">
+					<a href="#">
+						<span>SurfLife</span>
+						<span class="reddot"></span>
+					</a>
+				</div>
+				<div
+					class="nav__menu__btn"
+					id="menu-btn">
+					<i class="ri-menu-line"></i>
+				</div>
+			</div>
+			<ul
+				class="nav__links"
+				id="nav-links">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT US</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+			<div class="nav__btns">
+				<button class="btn"><i class="ri-search-line"></i></button>
+				<button class="btn"><i class="ri-shopping-bag-line"></i></button>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="container__left">
+				<h1>Ride The Wave</h1>
+				<div class="container__btn">
+					<button class="btn">Browse Collection</button>
+				</div>
+			</div>
+			<div class="container__right">
+				<div class="images">
+					<img
+						src="surfer_1.png"
+						alt="surfer_1"
+						class="image-1" />
+					<img
+						src="surfer_2.png"
+						alt="surfer_2"
+						class="image-2" />
+				</div>
+				<div class="content">
+					<h4>The Largest Selection of</h4>
+					<h2>SURF BOARDS.</h2>
+					<h3>New and Used!</h3>
+					<p>
+						Designed for the thrill-seekers and wave chasers, our range of surfboards embodies the spirit of the ocean. Crafted for optimum
+						performance and durability, they promise a seamless surfing experience, allowing you to connect with the waves in their purest form.
+					</p>
+				</div>
+			</div>
+			<div class="location">
+				<span><i class="ri-map-pin-2-fill"></i></span>
+				OUR LOCATION
+			</div>
+			<div class="socials">
+				<span>
+					<a href="#"><i class="ri-facebook-fill"></i></a>
+				</span>
+				<span>
+					<a href="#"><i class="ri-instagram-line"></i></a>
+				</span>
+				<span>
+					<a href="#"><i class="ri-twitter-fill"></i></a>
+				</span>
+			</div>
+		</div>
+
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="main.js"></script>
 	</body>
 </html>
